@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Русские пароли</string>
+    <string name="help_text">Введите пароль в русской раскладке</string>
+    <string name="clipboard_title">Пароль</string>
+    <string name="message_copied">Скопировано в буфер обмена</string>
+
+    <string-array name="russian">
+        <item>й</item>
+        <item>ц</item>
+        <item>у</item>
+        <item>к</item>
+        <item>е</item>
+        <item>н</item>
+        <item>г</item>
+        <item>ш</item>
+        <item>щ</item>
+        <item>з</item>
+    </string-array>
+
+    <string-array name="english">
+        <item>q</item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>y</item>
+        <item>u</item>
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+    </string-array>
+</resources>
