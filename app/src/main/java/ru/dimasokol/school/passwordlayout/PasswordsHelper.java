@@ -35,4 +35,8 @@ public class PasswordsHelper {
 
         return result.toString();
     }
+
+    public int getQuality(CharSequence password) {
+        return Math.min(password.length(), 10);
+    }
 }

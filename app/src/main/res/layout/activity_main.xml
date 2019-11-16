@@ -13,7 +13,8 @@
         android:textAppearance="@android:style/TextAppearance.Medium"
         android:text="@string/help_text" />
 
-    <LinearLayout
+    <RelativeLayout
+        android:background="@drawable/result_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_result"
@@ -22,24 +23,56 @@
         android:gravity="center_vertical"
         >
 
-        <TextView
-            android:id="@+id/result_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAppearance="@style/ResultTextAppearance"
-            tools:text="qQwWeE"
-            />
-
         <ImageButton
             android:id="@+id/button_copy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_copy_black_24dp"
             android:padding="@dimen/copy_button_padding"
+            android:layout_alignParentRight="true"
             />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ResultTextAppearance"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/button_copy"
+            android:layout_alignTop="@id/button_copy"
+            android:layout_alignBottom="@id/button_copy"
+
+            tools:text="qQwWeE"
+            />
+
+        <ImageView
+            android:id="@+id/quality"
+            android:layout_width="@dimen/indicator_width"
+            android:layout_height="@dimen/indicator_height"
+            android:src="@drawable/quality_indicator"
+            android:layout_below="@id/result_text"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/quality_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toLeftOf="@id/quality"
+            android:layout_alignTop="@+id/quality"
+            android:layout_alignBottom="@+id/quality"
+            android:gravity="center_vertical"
+
+            android:text="@string/quality_hint"
+            />
+
+    </RelativeLayout>
 
     <EditText
         android:id="@+id/source_text"
@@ -47,5 +80,11 @@
         android:layout_height="wrap_content"
         tools:text="йЙцЦуУ"
         />
+
+    <CheckBox
+        android:id="@+id/check_uppercase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check_uppercase" />
 
 </LinearLayout>
