@@ -7,4 +7,6 @@
     <dimen name="result_stroke_width">4dp</dimen>
     <dimen name="indicator_width">128dp</dimen>
     <dimen name="indicator_height">32dp</dimen>
+    <dimen name="text_width">0dp</dimen>
+    <dimen name="button_stroke">4dp</dimen>
 </resources>

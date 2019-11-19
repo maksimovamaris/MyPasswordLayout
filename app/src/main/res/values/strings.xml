@@ -1,23 +1,24 @@
 <resources>
     <string name="app_name">Русские пароли</string>
-    <string name="help_text">Введите пароль в русской раскладке</string>
+    <string name="help_text">Здесь вы можете посмотреть свой пароль,созданный по методу "русское слово в английской раскладке"</string>
     <string name="clipboard_title">Пароль</string>
     <string name="message_copied">Скопировано в буфер обмена</string>
 
-    <string name="quality_hint">(качество)</string>
+    <string name="quality_hint">Качество</string>
     <string name="check_uppercase">Заглавные</string>
+    <string name="check_digits">Цифры</string>
+    <string name="check_char">Спецсимовлы</string>
+    <string name="help_text_gen">Сгенерируйте новый пароль ему на замену</string>
+    <string name="button_text">Генерировать</string>
+    <string name="length_hint">Длина</string>
+    <string name="text_hint">qQwWeE</string>
+    <string name="text_hint_ru">йЙцЦуУ</string>
 
     <string-array name="qualities">
         <item>@string/quality_hint</item>
         <item>Ужасный</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
+        <item>Плохой</item>
+        <item>Хороший</item>
         <item>Отличный</item>
     </string-array>
 
@@ -32,6 +33,30 @@
         <item>ш</item>
         <item>щ</item>
         <item>з</item>
+        <item>х</item>
+        <item>ъ</item>
+        <item>ф</item>
+        <item>ы</item>
+        <item>в</item>
+        <item>а</item>
+        <item>п</item>
+        <item>р</item>
+        <item>о</item>
+        <item>л</item>
+        <item>д</item>
+        <item>ж</item>
+        <item>э</item>
+        <item>ё</item>
+        <item>я</item>
+        <item>ч</item>
+        <item>с</item>
+        <item>м</item>
+        <item>и</item>
+        <item>т</item>
+        <item>ь</item>
+        <item>б</item>
+        <item>ю</item>
+
     </string-array>
 
     <string-array name="english">
@@ -45,5 +70,47 @@
         <item>i</item>
         <item>o</item>
         <item>p</item>
+        <item>[</item>
+        <item>]</item>
+        <item>a</item>
+        <item>s</item>
+        <item>d</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>;</item>
+        <item>"'"</item>
+        <item>\</item>
+        <item>z</item>
+        <item>x</item>
+        <item>c</item>
+        <item>v</item>
+        <item>b</item>
+        <item>n</item>
+        <item>m</item>
+        <item>,</item>
+        <item>.</item>
     </string-array>
+    <string name="length">Длина: 8 +
+    </string>
+    <string name="equals">=
+    </string>
+
+
+    <plurals name="test3">
+        <item quantity="one">%3$s %1$d test out of %2$d ok</item>
+        <item quantity="other">%3$s %1$d tests out of %2$d ok</item>
+    </plurals>
+
+
+    <plurals name="chars">
+        <item quantity="one">%3$s 8 + %1$d символ = %2$d символов</item>
+        <item quantity="two">%3$s 8 + %1$s символа = %2$d символов</item>
+        <item quantity="few">%3$s 8 + %1$s символа= %2$d символов</item>
+        <item quantity="many">%3$s 8 + %1$s символов = %2$d символов</item>
+        <item quantity="other">%3$s 8 + %1$s символов = %2$d символов</item>
+    </plurals>
 </resources>

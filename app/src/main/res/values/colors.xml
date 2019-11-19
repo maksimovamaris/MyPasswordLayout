@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="bad_password">#F44336</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="color_grey">#a0a0a0</color>
 </resources>
